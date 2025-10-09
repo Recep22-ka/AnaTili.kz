@@ -1,0 +1,43 @@
+.form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.quiz-container {
+  display: flex;
+  height: 100vh;
+}
+
+.quiz-left {
+  flex: 1; /* экранның жартысын алады */
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* көк фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-right {
+  flex: 1; /* екінші жартысы (ақ фон) */
+  background: #fff;
+}
+
+

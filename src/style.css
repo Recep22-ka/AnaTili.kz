@@ -1,0 +1,140 @@
+.form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.button {
+  background-color: #007bf0;
+  color: blue;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  padding: 20px;
+}
+
+.quiz-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.question {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.quiz-button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.quiz-button:hover {
+  background-color: #2980b9;
+}
+
+.progress {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.result-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #27ae60;
+}
+
+.result {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.restart {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.restart:hover {
+  background-color: #d35400;
+}
+
+/* 📱 Телефонға бейімделу */
+@media (max-width: 768px) {
+  .quiz-box {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .question {
+    font-size: 18px;
+  }
+
+  .quiz-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .result-title {
+    font-size: 20px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+}

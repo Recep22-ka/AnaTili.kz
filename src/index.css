@@ -1,0 +1,96 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #007bff; /* Көк */
+  --secondary-color: #28a745; /* Жасыл */
+  --bg-color: #f8f9fa; /* Ашық фон */
+  --text-color: #343a40; /* Қара мәтін */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* -------------------- Navbar Styles -------------------- */
+.navbar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar .links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------- Content/Page Styles -------------------- */
+.content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* -------------------- Card/Item Styles -------------------- */
+.word-item, .grammar-item, .quiz {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--secondary-color);
+}
+
+/* -------------------- Button Styles -------------------- */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.answer-section button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    color: var(--text-color);
+}
+.answer-section button:hover {
+    background-color: #ced4da;
+}
