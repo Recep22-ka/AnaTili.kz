@@ -1,11 +1,11 @@
-/* src/index.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #007bff; /* Көк */
-  --secondary-color: #28a745; /* Жасыл */
-  --bg-color: #f8f9fa; /* Ашық фон */
-  --text-color: #343a40; /* Қара мәтін */
+  --primary-color: #007bff; 
+  --secondary-color: #28a745; 
+  --bg-color: #f8f9fa; 
+  --text-color: #343a40; 
 }
 
 * {
@@ -21,7 +21,7 @@ body {
   line-height: 1.6;
 }
 
-/* -------------------- Navbar Styles -------------------- */
+
 .navbar {
   background-color: var(--primary-color);
   color: white;
@@ -50,14 +50,13 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* -------------------- Content/Page Styles -------------------- */
 .content {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 2rem;
 }
 
-/* -------------------- Card/Item Styles -------------------- */
+
 .word-item, .grammar-item, .quiz {
   background: white;
   padding: 1.5rem;
@@ -67,7 +66,7 @@ body {
   border-left: 5px solid var(--secondary-color);
 }
 
-/* -------------------- Button Styles -------------------- */
+
 button {
   background-color: var(--primary-color);
   color: white;
@@ -93,4 +92,93 @@ button:hover {
 }
 .answer-section button:hover {
     background-color: #ced4da;
+}
+
+
+
+
+
+
+:root {
+    --primary: #007bff; 
+    --secondary: #28a745; 
+    --danger: #dc3545; 
+    --background: #f4f7f6;
+    --text-color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        padding: 10px;
+    }
+    .links {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .links a, .links button {
+        margin: 5px 0 !important; 
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+.word-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .word-form {
+        flex-direction: column;
+    }
+    .word-form input,
+    .word-form button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .cta-buttons {
+        flex-direction: column;
+    }
+    .cta-buttons a {
+        width: 80%; 
+        margin: 5px auto;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 20px;
+        margin: 15px auto !important;
+    }
 }
