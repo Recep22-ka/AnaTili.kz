@@ -14,9 +14,8 @@ const App = () => {
       <AuthProvider>
         <div className="app">
           <Navbar /> 
-          <div className="content" style={{ maxWidth: '1200px', margin: '20px auto', padding: '0 20px' }}> {/* 9. Responsive дизайн қаңқасы */}
+          <div className="content" style={{ maxWidth: '1200px', margin: '20px auto', padding: '0 20px' }}> 
             <Routes>
-              {/* 5. Pages */}
               <Route path="/" element={<Home />} />
               <Route path="/grammar" element={<Grammar />} />
               <Route path="/quiz" element={<QuizPage />} />

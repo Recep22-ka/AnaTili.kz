@@ -13,7 +13,6 @@ const LoginPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (login(username, password)) {
-            // Сәтті кіру
         } else {
             setError('❌ Қате логин/пароль. Логин: admin, Пароль: 123');
         }
