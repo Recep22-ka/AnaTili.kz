@@ -57,7 +57,7 @@ const Home = () => {
             
             <div style={{ marginTop: '50px' }}>
                 <h2 style={{ color: '#333', borderBottom: '2px solid #ddd', paddingBottom: '10px' }}>
-                    Сөздік Қорды Басқару (CRUD Функционалы)
+                    Сөздік Қорды Басқару
                 </h2>
                 
                 <WordList />
